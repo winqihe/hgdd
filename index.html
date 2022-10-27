@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>留下你在西交的足迹</title>
+    <meta name="description" content="西交足迹地图生成器" />
+    <meta name="keywords" content="西交足迹,西交足迹地图生成器,西交地图" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="document.css" />
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1151 1223">
+      <style></style>
+      <style>
+        text {
+          font-family: slice,sans-serif;
+          fill: #111;
+          font-size: 30px;
+        }
+        #title {
+          font-size: 60px;
+        }
+        #分数 {
+          font-size: 60px;
+        }
+        #地区 path,
+        #地区 rect,
+        polyline {
+          fill-rule: evenodd;
+          clip-rule: evenodd;
+          stroke: #000;
+          stroke-width: 4;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+        #地区 path,
+        #地区 rect {
+          fill: #fff;
+          cursor: pointer;
+          pointer-events: auto;
+        }
+        polyline {
+          fill: none;
+          pointer-events: none;
+        }
+        #地区 > *[level="5"] {
+          fill: #ff7e7e;
+        }
+        #地区 > *[level="4"] {
+          fill: #ffb57e;
+        }
+        #地区 > *[level="3"] {
+          fill: #ffe57e;
+        }
+        #地区 > *[level="2"] {
+          fill: #a8ffbe;
+        }
+        #地区 > *[level="1"] {
+          fill: #88aeff;
+        }
+        .level-border {
+          fill-rule: evenodd;
+          clip-rule: evenodd;
+          fill: none;
+          stroke: #000000;
+          stroke-width: 4;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-miterlimit: 10;
+        }
+      </style>
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#111111;}
+	.st2{font-family:'Tensentype-JiaLiDaYuanGB18030,sans-serif';}
+	.st3{font-size:30px;}
+	.st4{enable-background:new    ;}
+	.st5{font-size:24px;}
+	.st6{font-size:21px;}
+	.st7{font-size:18px;}
+	.st8{fill:#FF7E7E;}
+	.st9{fill:#FFB57E;}
+	.st10{fill:#FFE57E;}
+	.st11{fill:#A8FFBE;}
+	.st12{fill:#88AEFF;}
+	.st13{fill:#FFFFFF;}
+	.st14{fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st15{font-family:'DengXian-Bold';}
+	.st16{font-size:60px;}
+	.st17{font-size:36px;}
+</style>
+      <g id="等级">
+        <path class="st8" d="M912,482h142v50H912V482z"/>
+	<path class="st9" d="M912,532h142v50H912V532z"/>
+	<path class="st10" d="M912,582h142v50H912V582z"/>
+	<path class="st11" d="M912,632h142v50H912V632z"/>
+	<path class="st12" d="M912,682h142v50H912V682z"/>
+	<path class="st13" d="M912,732h142v50H912V732z"/>
+	<path class="st14" d="M912,480h142v304H912V480z"/>
+	<text transform="matrix(1 0 0 1 929 516)" class="st1 st3">常驻５</text>
+	<text transform="matrix(1 0 0 1 929 567)" class="st1 st3">经常去４</text>
+	<text transform="matrix(1 0 0 1 929 617)" class="st1 st3">有时去３</text>
+	<text transform="matrix(1 0 0 1 929 667)" class="st1 st3">很少去２</text>
+	<text transform="matrix(1 0 0 1 929 717)" class="st1 st3">参观过１</text>
+	<text transform="matrix(1 0 0 1 927 767)" class="st1 st3">未进入过</text>
+      </g>
+      <g id="地区">
+	<rect id="操场" x="41" y="21" class="st0" width="158" height="207"/>
+	<rect id="球场" x="200" y="21" class="st0" width="158" height="207"/>
+	<rect id="北门" x="200" y="21" class="st0" width="380" height="59"/>
+	<rect id="水果<br>快递<br>超市" x="41" y="555" class="st0" width="120" height="50"/>
+	<rect id="电气学院" x="575" y="21" class="st0" width="238" height="109"/>
+	<rect id="机械学院" x="270" y="80" class="st0" width="121" height="100"/>
+	<rect id="材料学院" x="473" y="80" class="st0" width="102" height="100"/>
+	<rect id="校医院" x="279" y="180" class="st0" width="77" height="170"/>
+	<rect id="人文广场" x="356" y="180" class="st0" width="139" height="170"/>
+	<rect id="外国语学院<br>机械实训<br>众创空间" x="473" y="882" class="st0" width="191" height="172"/>
+	<rect id="计科电信" x="495" y="180" class="st0" width="80" height="170"/>
+	<rect id="校园网服务点" x="575" y="130" class="st0" width="238" height="104"/>
+	<rect id="文苑商业街" x="41" y="228" class="st0" width="119" height="330"/>
+	<rect id="湖" x="280" y="380" class="st0" width="215" height="135"/>
+	<rect id="草坪<br>树林" x="281" y="852" class="st0" width="65" height="100"/>
+	<rect id="教二" x="495" y="380" class="st0" width="80" height="134"/>
+	<rect id="实训广场" x="575" y="234" class="st0" width="238" height="92"/>
+	<rect id="教学楼" x="280" y="514" class="st0" width="297" height="106"/>
+	<rect id="图书馆" x="356" y="620" class="st0" width="260" height="179"/>
+	<rect id="澡堂<br>车棚" x="160" y="228" class="st0" width="119" height="52"/>
+	<rect id="文苑宿舍" x="160" y="280" class="st0" width="119" height="160"/>
+	<rect id="文苑餐厅" x="160" y="440" class="st0" width="119" height="80"/>
+	<rect id="南湖" x="241" y="752" class="st0" width="115" height="100"/>
+	<rect id="致远广场" x="365" y="864" class="st0" width="88" height="100"/>
+	<rect id="小树林" x="455" y="798" class="st0" width="139" height="85"/>
+	<rect id="静苑球馆" x="575" y="326" class="st0" width="238" height="100"/>
+	<rect id="静一<br>静二<br>静三" x="575" y="425" class="st0" width="238" height="140"/>
+	<rect id="静苑餐厅" x="575" y="565" class="st0" width="238" height="55"/>
+	
+	<rect id="ATM" x="575" y="515" class="st0" width="50" height="50"/>
+	<rect id="水房" x="763" y="535" class="st0" width="50" height="30"/>
+	<rect id="艺术中心" x="160" y="520" class="st0" width="119" height="84"/>
+	<rect id="科苑宿舍" x="41" y="605" class="st0" width="180" height="107"/>
+	<rect id="篮球场" x="231" y="625" class="st0" width="92" height="77"/>
+	<rect id="科苑餐厅" x="81" y="712" class="st0" width="140" height="125"/>
+	<rect id="科润楼" x="41" y="837" class="st0" width="240" height="75"/>
+	<rect id="建设中<br>新操场" x="41" y="984" class="st0" width="264" height="65"/>
+	<rect id="科苑篮球场" x="41" y="912" class="st0" width="240" height="73"/>
+	<rect id="南门" x="305" y="964" class="st0" width="180" height="91"/>
+	<rect id="教七" x="595" y="796" class="st0" width="162" height="86"/>
+	<rect id="静四" x="595" y="620" class="st0" width="162" height="101"/>
+	<rect id="静苑篮球场" x="595" y="620" class="st0" width="66" height="40"/>
+
+	<rect id="人才公寓" x="595" y="720" class="st0" width="162" height="76"/>
+
+	<rect id="小山坡" x="664" y="904" class="st0" width="149" height="150"/>
+       <g id="地名">
+        <text transform="matrix(1 0 0 1 648.6312 85.6525)" class="st1 st3">电气学院</text>
+	<text transform="matrix(1 0 0 1 113.631 85.6524)" class="st1 st3">操场</text>
+	<text transform="matrix(1 0 0 1 205.6312 150.6525)" class="st1 st3">球场</text>
+	<text transform="matrix(1 0 0 1 610.6313 188.6525)" class="st1 st3">校园网服务点</text>
+	<text transform="matrix(1 0 0 1 55.6311 590.3311)" class="st4"><tspan x="0" y="0" class="st1 st7">水果店</tspan></text>
+	<text transform="matrix(1 0 0 1 86.6313 317.6525)" class="st4"><tspan x="0" y="0" class="st1 st3">商</tspan><tspan x="0" y="36" class="st1 st3">业</tspan><tspan x="0" y="72" class="st1 st3">街</tspan></text>
+	<text transform="matrix(1 0 0 1 51.6313 666.6525)" class="st1 st5">科苑宿舍</text>
+	<text transform="matrix(1 0 0 1 237.6313 666.6525)" class="st1 st5">篮球场</text>
+
+	<text transform="matrix(1 0 0 1 172.3255 582.1073)" class="st1 st5">艺术中心</text>
+	
+	<text transform="matrix(1 0 0 1 172.3251 261.2972)" class="st1 st5">澡堂快递</text>
+	<text transform="matrix(1 0 0 1 394.6308 59.9737)" class="st1 st3">北门</text>
+	<text transform="matrix(1 0 0 1 281.3251 102.2972)" class="st1 st5">机械学院</text>
+	<text transform="matrix(1 0 0 1 475.3253 102.2971)" class="st1 st5">材料学院</text>
+	<text transform="matrix(1 0 0 1 162.6308 392.9737)" class="st1 st3">文苑宿舍</text>
+	<text transform="matrix(1 0 0 1 162.6308 502.9737)" class="st1 st3">文苑餐厅</text>
+
+	<text transform="matrix(1 0 0 1 505.631 240.9738)" class="st4"><tspan x="0" y="0" class="st1 st3">计科</tspan><tspan x="0" y="36" class="st1 st3">电信</tspan></text>
+	<text transform="matrix(1 0 0 1 302.6311 241.2949)" class="st4"><tspan x="0" y="0" class="st1 st3">校</tspan><tspan x="0" y="36" class="st1 st3">医</tspan><tspan x="0" y="72" class="st1 st3">院</tspan></text>
+	<text transform="matrix(1 0 0 1 440.679 707.1072)" class="st1">图书馆</text>
+	<text transform="matrix(1 0 0 1 86.6311 786.9149)" class="st1 st3">科苑餐厅</text>
+	<text transform="matrix(1 0 0 1 102.6311 883.9149)" class="st1 st3">科润楼</text>
+	<text transform="matrix(1 0 0 1 289.6308 795.915)" class="st1 st3">南湖</text>
+
+	<text transform="matrix(1 0 0 1 289.6308 895.915)" class="st1 st3"><tspan x="0" y="0" class="st1 st5">树</tspan><tspan x="0" y="28.8" class="st1 st5">林</tspan></text>
+	<text transform="matrix(1 0 0 1 685.6308 1022.915)" class="st1 st3">小山坡</text>
+	<text transform="matrix(1 0 0 1 640.3254 821.8388)" class="st1 st5">教七</text>
+	<text transform="matrix(1 0 0 1 63.3255 1015.8388)" class="st4">建设中</text>
+	<text transform="matrix(1 0 0 1 461.6311 834.5938)" class="st1 st3">小树林</text>
+	<text transform="matrix(1 0 0 1 386.3255 893.5176)" class="st4"><tspan x="0" y="0" class="st1 st5">致远</tspan><tspan x="0" y="28.8" class="st1 st5">广场</tspan></text>
+	<text transform="matrix(1 0 0 1 398.631 1020.105)" class="st1 st3">南门</text>
+	<text transform="matrix(1 0 0 1 642.6311 682.2361)" class="st1 st3">静四</text>
+	<text transform="matrix(1 0 0 1 605.6311 645.2361)" class="st4"><tspan x="0" y="0" class="st1 st7">球场</tspan></text>
+
+	<text transform="matrix(1 0 0 1 622.6311 772.2361)" class="st1 st3">人才公寓</text>
+
+	<text transform="matrix(1 0 0 1 78.6308 963.915)" class="st1 st3">科苑篮球场</text>
+	<text transform="matrix(1 0 0 1 510.6308 970.3676)" class="st1 st3">创新楼</text>
+	<text transform="matrix(1 0 0 1 663.631 386.8787)" class="st1 st3">静苑球馆</text>
+	<text transform="matrix(1 0 0 1 648.6315 290.8788)" class="st1 st3">实训广场</text>
+	<text transform="matrix(1 0 0 1 368.6308 271.6524)" class="st1 st3">人文广场</text>
+	<text transform="matrix(1 0 0 1 381.6308 425.6524)" class="st4">湖</text>
+	<text transform="matrix(1 0 0 1 630.6311 514.3311)" class="st4">静苑宿舍</text>
+	<text transform="matrix(1 0 0 1 630.6311 604.3311)" class="st4">静苑餐厅</text>
+	<text transform="matrix(1 0 0 1 578.6311 540.3311)" class="st4"><tspan x="0" y="0" class="st1 st7">ATM</tspan></text>
+	<text transform="matrix(1 0 0 1 770.6311 555.3311)" class="st4"><tspan x="0" y="0" class="st1 st7">水房</tspan></text>
+
+	<text transform="matrix(1 0 0 1 512.3251 408.2551)" class="st4"><tspan x="0" y="0" class="st1 st5">教二</text>
+	<text transform="matrix(1 0 0 1 366.631 561.2364)" class="st4">教学楼</text>
+
+
+      </g>
+       <text id="标题" transform="matrix(1 0 0 1 844.1598 86.1301)" class="st1 st16">河工点滴</text>
+       <text id="分数" transform="matrix(1 0 0 1 836.1598 215.7141)" class="st1 st16">分数</text>
+       <text id="扫码生成" transform="matrix(1 0 0 1 865.2908 420.2617)" class="st1 st6">扫码生成你的“河工足迹”</text>
+       <text transform="matrix(1 0 0 1 836.631 821.4261)" class="st4"><tspan x="0" y="0" class="st1 st3">制图：贺文奇</tspan><tspan x="0" y="36" class="st1 st3">原案@神奇海螺试验场</tspan><tspan x="0" y="72" class="st1 st3">参考@西交足迹</tspan></text>
+       <text id="标题_2_" transform="matrix(1 0 0 1 34.8859 1091.0974)" class="st4"><tspan x="0" y="0" class="st1 st5">本功能仅供娱乐，地图若有不够精细之处，敬请谅解</tspan><tspan x="0" y="28.8" class="st1 st5">选项说明（仅供参考）：</tspan><tspan x="0" y="57.6" class="st1 st5">常驻：长期居住、学习（过）的地方  </tspan><tspan x="0" y="86.4" class="st1 st5">经常去：2个或以上学期上过课、经常自习等的地方</tspan><tspan x="0" y="115.2" class="st1 st5">有时去：只上过一两门课的地方</tspan></text>
+       <text id="标题_3_" transform="matrix(1 0 0 1 608.063 1090.8356)" class="st4"><tspan x="0" y="0" class="st1 st5"> </tspan><tspan x="0" y="28.8" class="st1 st5"> </tspan><tspan x="0" y="57.6" class="st1 st5">很少去：只上过非主课或特殊情况偶尔去过的地方  </tspan><tspan x="0" y="86.4" class="st1 st5">参观过：仅仅进入或参观过一两次的地方</tspan><tspan x="0" y="115.2" class="st1 st5">未进入过：只是路过</tspan></text>
+    </g>
+
+<image style="overflow:visible;" width="400" height="400" xlink:href="data:image/png;base64,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
+SKoAAAAASUVORK5CYII=" transform="matrix(0.335 0 0 0.335 914 247)">
+</image>
+    </svg>
+    <div id="设置等级">
+        <h2>地区</h2>
+        <a data-level="5">常驻</a>
+        <a data-level="4">经常去</a>
+        <a data-level="3">有时去</a>
+        <a data-level="2">很少去</a>
+        <a data-level="1">参观过</a>
+        <a data-level="0">未进入过</a>
+    </div>
+    <div id="输出图像" style="display: none">
+        <div>
+            <img />
+        </div>
+        <p>
+            手机端可长按图片
+            <b>“添加到照片”</b>
+        </p>
+        <div>
+            <a class="按钮">关闭</a>
+        </div>
+    </div>
+    <script src="document.js"></script>
+</body>
+
+</html>
